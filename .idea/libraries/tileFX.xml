@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="tileFX">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/Program Files/JetBrains/tilesfx-1.6.5.zip!/tilesfx-1.6.5/src/main/java" />
+      <root url="jar://C:/Program Files/JetBrains/tilesfx-1.6.5.zip!/tilesfx-1.6.5/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
