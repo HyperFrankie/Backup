@@ -27,17 +27,17 @@ public class MainScreenController {
         backupTasksButton.setImage(image);
         currentStateButton.setImage(image);
 
-        Tile testTile = new Tile(Tile.SkinType.BAR_CHART);
-        testTile.setTitle("Test Title");
-        testTile.setTitleAlignment(TextAlignment.CENTER);
-        testTile.addChartData(new ArrayList<ChartData>() {{
-            add(new ChartData("Data 1", 14.1d, Color.GREENYELLOW));
-            add(new ChartData("Data 2", 23.5d, Color.AQUA));
-        }});
-        testTile.getChartData().get(0).setAnimated(true);
-        testTile.setPrefSize(300, 300);
-        testTile.setAutoScale(true);
-        mainScreenCenterPane.getChildren().add(testTile);
+//        Tile testTile = new Tile(Tile.SkinType.BAR_CHART);
+//        testTile.setTitle("Test Title");
+//        testTile.setTitleAlignment(TextAlignment.CENTER);
+//        testTile.addChartData(new ArrayList<ChartData>() {{
+//            add(new ChartData("Data 1", 14.1d, Color.GREENYELLOW));
+//            add(new ChartData("Data 2", 23.5d, Color.AQUA));
+//        }});
+//        testTile.getChartData().get(0).setAnimated(true);
+//        testTile.setPrefSize(300, 300);
+//        testTile.setAutoScale(true);
+//        mainScreenCenterPane.getChildren().add(testTile);
     }
 
 }
