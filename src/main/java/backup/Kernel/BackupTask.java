@@ -1,22 +1,22 @@
-package Kernel;
+package backup.Kernel;
 
 public class BackupTask {
 
     public static final int UNKNOWN = -1, MINDTIME = 0, COBIAN_BACKUP_10 = 1, COBIAN_BACKUP_11 = 2, ROBOCOPY = 3;
 
-    private int program;
-    private String name;
-    private Source source;
-    private Destination destination;
+    public int program;
+    public String name;
+    public Source source;
+    public Destination destination;
 
-    public BackupTask(String backupTaskName, Source backupSource, Destination backupDestination, int BACKUP_PROGRAM) {
+    public BackupTask(String backupTaskName, backup.Kernel.Source backupSource, backup.Kernel.Destination backupDestination, int BACKUP_PROGRAM) {
         name = backupTaskName;
         source = backupSource;
         destination = backupDestination;
         program = BACKUP_PROGRAM;
     }
 
-    public BackupTask(String backupTaskName, Source backupSource, Destination backupDestination) {
+    public BackupTask(String backupTaskName, backup.Kernel.Source backupSource, backup.Kernel.Destination backupDestination) {
         this(backupTaskName, backupSource, backupDestination, UNKNOWN);
     }
 
@@ -42,17 +42,17 @@ public class BackupTask {
         name = clientName;
     }
 
-    public Destination getBackupDestination() {
+    public backup.Kernel.Destination getBackupDestination() {
         return destination;
     }
-    public void setBackupDestination(Destination backupDestination) {
+    public void setBackupDestination(backup.Kernel.Destination backupDestination) {
         destination = backupDestination;
     }
 
-    public Source getBackupSource() {
+    public backup.Kernel.Source getBackupSource() {
         return source;
     }
-    public void setBackupSource(Source backupSource) {
+    public void setBackupSource(backup.Kernel.Source backupSource) {
         source = backupSource;
     }
 

@@ -1,19 +1,19 @@
-import eu.hansolo.tilesfx.Tile;
-import eu.hansolo.tilesfx.chart.ChartData;
+package backup;
+
+import backup.Kernel.Config;
+import backup.Kernel.Database;
+import com.jcraft.jsch.JSchException;
+import com.jcraft.jsch.SftpException;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.paint.Color;
-import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
-
-import java.time.Instant;
-import java.util.ArrayList;
 
 public class MainScreenController {
 
     public Stage mainScreenStage;
+    public Config config;
 
     @FXML
     public ImageView homeButton, backupTasksButton, currentStateButton;
@@ -21,8 +21,11 @@ public class MainScreenController {
     public AnchorPane mainScreenCenterPane;
 
     @FXML
-    public void initialize() {
-        Image image = GUIUtil.getImageFromResourcePath("/images/GUI/Home.png");
+    public void initialize() throws SftpException, JSchException {
+//        config = new Config();
+        Database db = new Database();
+
+        Image image = GUIUtil.getImageFromResourcePath("/backup/GUI/images/Home.png");
         homeButton.setImage(image);
         backupTasksButton.setImage(image);
         currentStateButton.setImage(image);

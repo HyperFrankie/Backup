@@ -1,4 +1,4 @@
-package Kernel;
+package backup.Kernel;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,10 +6,10 @@ import java.util.List;
 
 public class Client {
 
-    private String name;
-    private List<BackupTask> taskList;
+    public String name;
+    public List<backup.Kernel.BackupTask> taskList;
 
-    public Client(String clientName, List<BackupTask> backupTaskList) {
+    public Client(String clientName, List<backup.Kernel.BackupTask> backupTaskList) {
         name = clientName;
         taskList = backupTaskList;
     }
@@ -22,16 +22,16 @@ public class Client {
         this("New Client");
     }
 
-    public List<BackupTask> getBackupTaskList() {
+    public List<backup.Kernel.BackupTask> getBackupTaskList() {
         return taskList;
     }
-    public void setBackupTaskList(List<BackupTask> backupTaskList) {
+    public void setBackupTaskList(List<backup.Kernel.BackupTask> backupTaskList) {
         taskList = backupTaskList;
     }
-    public void addBackupTask(BackupTask... backupTask) {
+    public void addBackupTask(backup.Kernel.BackupTask... backupTask) {
         taskList.addAll(Arrays.asList(backupTask));
     }
-    public void removeBackuptask(BackupTask... backupTask) {
+    public void removeBackuptask(backup.Kernel.BackupTask... backupTask) {
         taskList.removeAll(Arrays.asList(backupTask));
     }
     public void emptyBackupTaskList() {

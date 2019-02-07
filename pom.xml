@@ -21,6 +21,12 @@
             <artifactId>tilesfx</artifactId>
             <version>1.6.5</version>
         </dependency>
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.55</version>
+        </dependency>
+
     </dependencies>
     <groupId>groupId</groupId>
     <artifactId>Backup</artifactId>
